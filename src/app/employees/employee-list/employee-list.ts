@@ -3,10 +3,12 @@ import { Component , OnInit} from '@angular/core';
 import {  Router} from '@angular/router';
 import { EmployeeService } from '../employee-service/employee';
 import {Employee} from '../model/employee.model';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-employee-list',
-  imports: [],
+  imports: [CommonModule, FormsModule],
   templateUrl: './employee-list.html',
   styleUrl: './employee-list.css'
 })

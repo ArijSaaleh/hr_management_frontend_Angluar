@@ -5,7 +5,7 @@ import {Register} from './auth/register/register';
 import {Login} from './auth/login/login';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/employees', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'register', component: Register},
   { path: 'login', component: Login},
   { path: 'employees', component : EmployeeList },
